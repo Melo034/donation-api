@@ -12,6 +12,10 @@ const donationSchema = new mongoose.Schema({
     image:{
         type: String,
     },
+    address:{
+        type: String,
+        required: true,
+    },
 })
 
 const Donation = mongoose.model("Donation", donationSchema);
